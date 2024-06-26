@@ -1,0 +1,15 @@
+**/__pycache__
+configs/
+data/
+experiments/
+*.tif
+*.pbs
+standardisation_*
+data_demo_*
+TODO.txt
+cell_ids*
+
+!standardisation_hist_fold_1.npy
+!configs/config_demo.json
+!configs/config_demo_inference.json
+!experiments/fold1_2024_06_21_20_44_56

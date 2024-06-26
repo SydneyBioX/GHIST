@@ -1,0 +1,16 @@
+numpy==1.26.3
+pandas==2.1.3
+tifffile==2023.12.9
+tqdm==4.66.1
+h5py==3.10.0
+natsort==8.4.0
+torch==2.1.1
+torchvision==0.16.1
+torchstain==1.3.0
+matplotlib==3.8.2
+seaborn==0.13.1
+scipy==1.11.4
+scikit-learn==1.3.2
+pillow==10.2.0
+opencv-python==4.9.0.80
+imageio==2.34.1
