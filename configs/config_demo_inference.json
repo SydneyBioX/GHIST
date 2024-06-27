@@ -1,0 +1,41 @@
+{
+    "data": {
+        "cell_types": [
+            "B",
+            "Myeloid",
+            "Endothelial",
+            "Fibroblast",
+            "Macrophage",
+            "Malignant",
+            "Epithelial",
+            "Plasma",
+            "T"
+        ],
+        "high_conf_prob": 0.6,
+		"min_nuc_area": 10,
+		"expr_scale": 5.0,
+        "num_workers": 8,
+        "hsize": 256,
+        "wsize": 256,
+        "overlap": 0,
+        "max_n_pp": 500
+    },
+    "model": {
+        "gpu_ids": [0],
+        "emb_dim": 256
+    },
+    "training": {
+        "batch_size": 8
+    },
+    "data_sources": {
+        "fp_sc_ref": "./data_demo/sc_breast.csv",
+        "fp_nuc_seg": "./data_demo/nuclei_breast_demo.tif",
+        "fp_hist": "./data_demo/histology_breast_demo.tif",
+        "fp_genes": "./data_demo/genes.txt"
+    },
+    "experiment_dirs": {
+        "load_dir": "fold1_2024_06_21_20_44_56",
+        "model_dir": "models",
+        "inference_output_dir": "inference_output"
+    }
+}
