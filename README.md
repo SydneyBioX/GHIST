@@ -37,8 +37,7 @@ Typically installation is expected to be completed within a few minutes.
 
 ## Demo
 
-The demo dataset is from publicly available data provided by 10x Genomics (In Situ Sample 2): https://www.10xgenomics.com/products/xenium-in-situ/preview-dataset-human-breast. For the demo, download saved model from https://drive.google.com/drive/folders/1JcAGZRZgJowenaUoZ8rWH6kYHjJfqWFr?usp=sharing, and place the `.pth` files into `experiments/fold1_2024_06_21_20_44_56`
-
+The demo dataset is from publicly available data provided by 10x Genomics (In Situ Sample 2): https://www.10xgenomics.com/products/xenium-in-situ/preview-dataset-human-breast. For the demo, download saved model from https://drive.google.com/drive/folders/1JcAGZRZgJowenaUoZ8rWH6kYHjJfqWFr?usp=sharing, and place the `.pth` files into `experiments/fold1_2024_06_21_20_44_56`. Unzip the file `data_demo/images.zip` and place the 3 `.tif` files under `data_demo`.
 
 
 ### Running the demo

@@ -8,6 +8,11 @@ TODO.txt
 cell_ids*
 experiments/
 
+data_demo/histology_breast_demo.tif
+data_demo/nuclei_breast_demo.tif
+data_demo/stain_target_demo.tif
+
 !standardisation_hist_fold_1.npy
 !configs/config_demo.json
 !configs/config_demo_inference.json
+
