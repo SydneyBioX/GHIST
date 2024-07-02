@@ -1,6 +1,6 @@
 # Spatial gene expression at single-cell resolution from histology using deep learning with GHIST
 
-TODO add abstract
+The increased use of spatially resolved transcriptomics provides new biological insights into disease mechanisms. However, the high cost and complexity of these methods are barriers to broad clinical adoption. Consequently, methods have been created to predict spot-based gene expression from routinely-collected histology images. Recent benchmarking showed that current methodologies have limited accuracy and spatial resolution, constraining translational capacity. Here, we introduce GHIST, a deep learning-based framework that predicts spatial gene expression at single-cell resolution by leveraging subcellular spatial transcriptomics and synergistic relationships between multiple layers of biological information. We validated GHIST using a public dataset and The Cancer Genome Atlas data, demonstrating its flexibility across different spatial resolutions and superior performance. Our results underscore the utility of in silico generation of single-cell spatial gene expression measurements and the capacity to enrich existing datasets with a spatially resolved omics modality, paving the way for scalable multi-omics analysis and new biomarker discoveries.  
 
 ![alt text](Figure1.png)
 
