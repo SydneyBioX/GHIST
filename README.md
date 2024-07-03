@@ -1,6 +1,6 @@
 # Spatial gene expression at single-cell resolution from histology using deep learning with GHIST
 
-The increased use of spatially resolved transcriptomics provides new biological insights into disease mechanisms. However, the high cost and complexity of these methods are barriers to broad clinical adoption. Consequently, methods have been created to predict spot-based gene expression from routinely-collected histology images. Recent benchmarking showed that current methodologies have limited accuracy and spatial resolution, constraining translational capacity. Here, we introduce GHIST, a deep learning-based framework that predicts spatial gene expression at single-cell resolution by leveraging subcellular spatial transcriptomics and synergistic relationships between multiple layers of biological information. We validated GHIST using a public dataset and The Cancer Genome Atlas data, demonstrating its flexibility across different spatial resolutions and superior performance. Our results underscore the utility of in silico generation of single-cell spatial gene expression measurements and the capacity to enrich existing datasets with a spatially resolved omics modality, paving the way for scalable multi-omics analysis and new biomarker discoveries.  
+The increased use of spatially resolved transcriptomics provides new biological insights into disease mechanisms. However, the high cost and complexity of these methods are barriers to broad clinical adoption. Consequently, methods have been created to predict spot-based gene expression from routinely-collected histology images. Recent benchmarking showed that current methodologies have limited accuracy and spatial resolution, constraining translational capacity. Here, we introduce GHIST, a deep learning-based framework that predicts spatial gene expression at single-cell resolution by leveraging subcellular spatial transcriptomics and synergistic relationships between multiple layers of biological information. We validated GHIST using public datasets and The Cancer Genome Atlas data, demonstrating its flexibility across different spatial resolutions and superior performance. Our results underscore the utility of in silico generation of single-cell spatial gene expression measurements and the capacity to enrich existing datasets with a spatially resolved omics modality, paving the way for scalable multi-omics analysis and new biomarker discoveries.  
 
 ![alt text](Figure1.png)
 
@@ -37,27 +37,37 @@ Typically installation is expected to be completed within a few minutes.
 
 ## Demo
 
-The demo dataset is from publicly available data provided by 10x Genomics (In Situ Sample 2): https://www.10xgenomics.com/products/xenium-in-situ/preview-dataset-human-breast. For the demo, download saved model from https://drive.google.com/drive/folders/1JcAGZRZgJowenaUoZ8rWH6kYHjJfqWFr?usp=sharing, and place the `.pth` files into `experiments/fold1_2024_06_21_20_44_56`. Unzip the file `data_demo/images.zip` and place the 3 `.tif` files under `data_demo`.
+The demo dataset is based on publicly available data provided by 10x Genomics (In Situ Sample 2): https://www.10xgenomics.com/products/xenium-in-situ/preview-dataset-human-breast. We will use a subset of the data and a previously saved checkpoint as a short demo.
 
 
 ### Running the demo
 
-1. Train from checkpoint:
+1. Unzip the file `data_demo/images.zip` and place the 3 `.tif` files under `data_demo`:
+```sh
+unzip data_demo/images.zip -d data_demo/
+```
+
+2. Download saved model checkpoint:
+```sh
+gdown --folder https://drive.google.com/drive/folders/1ecTOXmSeQU9v8aKYniQQab2QqkOlIl8u?usp=sharing
+```
+
+3. Train from checkpoint:
 ```sh
 python train.py --use_sc --demo
 ```
 
-2. Validation mode:
+4. Validation mode:
 ```sh
 python test.py --use_sc --demo --mode val
 ```
 
-3. Testing mode:
+5. Testing mode:
 ```sh
 python test.py --use_sc --demo --mode test
 ```
 
-4. Inference mode (does not require labels):
+6. Inference mode (does not require labels):
 ```sh
 python inference.py --use_sc --demo --no_normstain
 ```

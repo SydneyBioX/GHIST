@@ -14,3 +14,4 @@ scikit-learn==1.3.2
 pillow==10.2.0
 opencv-python==4.9.0.80
 imageio==2.34.1
+gdown==5.2.0
