@@ -73,7 +73,7 @@ python test.py --use_sc --demo --mode test
 python inference.py --use_sc --demo --no_normstain
 ```
 
-The predictions are stored in ``experiments/{timestamp}/{mode}_output``, and the csv files contains the predicted gene expressions for each cell, where the index is the cell ID that corresponds to the IDs from the nuclei segmentation image, and the columns are the genes. Demo is expected to be completed within a few minutes.
+The predictions are stored in ``experiments/{timestamp}/{mode}_output``, and the csv files contains the predicted gene expressions for each cell, where the index is the cell ID that corresponds to the IDs from the nuclei segmentation image, and the columns are the genes. An example output csv file is provided, please see ``example_output.csv``. Demo is expected to be completed within a few minutes.
 
 
 ## Running GHIST:
@@ -111,7 +111,6 @@ python inference.py --config_file configs/FILENAME_inference.json --test_epoch E
 ### Output cell expressions
 
 Predicted gene expressions individual cells may be found in the experiment directory, e.g.: ``experiments/fold1_2024_06_21_20_44_56/test_output/epoch_50_expr.csv``
-An example output csv file is provided, please see ``example_output.csv``
 
 ## Citation
 
