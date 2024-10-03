@@ -1,10 +1,10 @@
 # Spatial gene expression at single-cell resolution from histology using deep learning with GHIST
 
+For more details, please refer to our [paper](https://www.biorxiv.org/content/10.1101/2024.07.02.601790v1).
+
 The increased use of spatially resolved transcriptomics provides new biological insights into disease mechanisms. However, the high cost and complexity of these methods are barriers to broad clinical adoption. Consequently, methods have been created to predict spot-based gene expression from routinely-collected histology images. Recent benchmarking showed that current methodologies have limited accuracy and spatial resolution, constraining translational capacity. Here, we introduce GHIST, a deep learning-based framework that predicts spatial gene expression at single-cell resolution by leveraging subcellular spatial transcriptomics and synergistic relationships between multiple layers of biological information. We validated GHIST using public datasets and The Cancer Genome Atlas data, demonstrating its flexibility across different spatial resolutions and superior performance. Our results underscore the utility of in silico generation of single-cell spatial gene expression measurements and the capacity to enrich existing datasets with a spatially resolved omics modality, paving the way for scalable multi-omics analysis and new biomarker discoveries.  
 
 ![alt text](Figure1.png)
-
-For more details, please refer to our paper (TODO: link to paper).
 
 
 ## Installation
@@ -29,6 +29,7 @@ conda activate ghist
 
 4. Install dependencies:
 ```sh
+cd GHIST
 pip install -r requirements.txt
 ```
 
@@ -116,4 +117,4 @@ Predicted gene expressions individual cells may be found in the experiment direc
 
 If GHIST has assisted you with your work, please kindly cite our paper:
 
-- TODO: add citation
+- https://www.biorxiv.org/content/10.1101/2024.07.02.601790v1
