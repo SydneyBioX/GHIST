@@ -111,7 +111,7 @@ python inference.py --config_file configs/FILENAME_inference.json --test_epoch E
 ### Output cell expressions
 
 Predicted gene expressions individual cells may be found in the experiment directory, e.g.: ``experiments/fold1_2024_06_21_20_44_56/test_output/epoch_50_expr.csv``
-
+An example output csv file is provided, please see ``example_output.csv``
 
 ## Citation
 
